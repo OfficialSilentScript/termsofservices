@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SilentScript — Terms & Privacy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    :root{
+      --bg1: #121226;
+      --bg2: #16213e;
+      --accent: #00bcd4;
+      --glass-bg: rgba(255,255,255,0.04);
+      --text: #e8f0ff;
+    }
+
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: radial-gradient(circle at 10% 10%, #2b1055 0%, #7597de 45%, var(--bg2) 100%);
+      color:var(--text);
+      line-height:1.7;
+      padding:40px 20px;
+    }
+
+    main.container{
+      max-width:980px;
+      margin:0 auto; /* horizontal zentrieren */
+      padding:34px;
+      border-radius:18px;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(12px) saturate(120%);
+      position: relative;
+      overflow: hidden;
+      box-shadow:0 20px 50px rgba(10,10,20,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    main.container::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+      mix-blend-mode: overlay;
+    }
+
+    header h1{
+      margin:0 0 6px 0;
+      font-size:1.9rem;
+      color:var(--accent);
+    }
+    header p{ margin:0 0 18px 0; opacity:0.95; }
+
+    h2{ color:#9fe7f4; margin-top:26px; margin-bottom:10px; font-size:1.05rem; }
+    p, li{ font-size:15.5px; line-height:1.65; opacity:0.95; margin:0 0 9px 0; }
+    ul{ margin:8px 0 12px 20px; padding:0; }
+
+    .small { font-size:13px; opacity:0.8; color:#cfeff6; }
+
+    .divider{
+      height:2px;
+      border-radius:3px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      margin:22px 0;
+    }
+
+    footer{ margin-top:28px; text-align:center; opacity:0.85; font-size:13px; }
+
+    a { color:#9fe7f4; text-decoration:none; font-weight:600; }
+    a:hover{ text-decoration:underline; }
+
+    @media (max-width:600px){
+      main.container{ padding:22px; border-radius:14px; }
+      header h1{ font-size:1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="main-title">
+    <header>
+      <h1 id="main-title">🔒 SilentScript — Privacy & Terms</h1>
+      <p class="small">Last updated: <strong>October 2025</strong></p>
+    </header>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section aria-labelledby="privacy-title">
+      <h2 id="privacy-title">Privacy — What we collect & why</h2>
+      <p>SilentScript cares about privacy. We collect only the minimum technical data necessary to protect the service and its users. This helps us prevent abuse and unauthorized distribution of keys.</p>
+
+      <ul>
+        <li><strong>IP access:</strong> Your full IP is read technically to perform realtime session generation and abuse checks. Only a masked version (e.g., <code>77.11...</code>) is stored or shown publicly.</li>
+        <li><strong>Session Hash:</strong> We generate a unique session ID based on your IP to track usage and prevent multiple/farmed key usage.</li>
+        <li><strong>Retention:</strong> Technical data used for security is kept temporarily (default: 7 days).</li>
+        <li><strong>No sale / third-party sharing:</strong> We do not sell your data. Only shared if legally required.</li>
+      </ul>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section aria-labelledby="terms-title">
+      <h2 id="terms-title">Terms of Service</h2>
+      <p>By using SilentScript websites, tools, or keys, you automatically agree to these terms. If you disagree, stop using our services immediately.</p>
+
+      <h3 class="small">User Responsibility</h3>
+      <ul>
+        <li>You run our scripts at your own risk. We are not responsible for bans, penalties, or account terminations resulting from usage.</li>
+        <li>Do not leak, share, or sell keys. Abusing key access will result in denial of service.</li>
+      </ul>
+
+      <h3 class="small">Security & Anti-Abuse</h3>
+      <ul>
+        <li>IP checks, session hashes, and rate-limits are used to detect and block abuse.</li>
+        <li>Abusive IPs may be added to an internal blacklist to protect the community.</li>
+      </ul>
+
+      <h3 class="small">Liability & Disclaimers</h3>
+      <ul>
+        <li>All content is provided "as is". We disclaim all warranties to the fullest extent permitted by law.</li>
+        <li>We are not liable for any direct or indirect damages resulting from use or misuse of our tools.</li>
+      </ul>
+
+      <h3 class="small">Changes</h3>
+      <p>We may update these terms at any time. Continued use implies acceptance of the latest version.</p>
+    </section>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact & Deletion Requests</h2>
+      <p>If you want data deleted or need support, contact us on Discord. Deletion requests are processed within ~14 days.</p>
+      <p style="text-align:center; margin-top:12px;"><a href="https://discord.gg/DGVwp7cvhB" target="_blank" rel="noopener">Open SilentScript Discord</a></p>
+    </section>
+
+    <footer>
+      © 2025 SilentScript — Template. Not legal advice.
+    </footer>
+  </main>
+</body>
+</html>
